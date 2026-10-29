@@ -3,5 +3,43 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0 0 40px;
+}
+
+.pagination button {
+  min-height: 40px;
+  padding: 8px 16px;
+  border: 1px solid #1ba94c;
+  border-radius: 4px;
+  background-color: #1ba94c;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #ffffff;
+  color: #1ba94c;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.pagination span {
+  font-weight: 600;
+}
+
+.pagination .back-home {
+  background-color: transparent;
+  color: #1ba94c;
 }
